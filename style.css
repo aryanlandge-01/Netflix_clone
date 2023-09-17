@@ -1,0 +1,326 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: white;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--primary-text-color);
+    background-color: black;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color:var(--primary-text-color);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+.button {
+    background-color: #e50914;
+    border: 0.5px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white !important;
+    padding: 12px 24px;
+    /* box-shadow: 0 0 2px var(--secondary-text-color); */
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #c11119;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1150px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+/* navbar */
+
+
+
+nav {
+    /* background-color: black; */
+    height: 100px;
+}
+
+img {
+    max-width: 250px;
+}
+
+.main-nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 40px;
+}
+   
+
+.main-nav h1 {
+    text-align: left;
+    margin: 0;
+}
+
+select {
+    background-color: transparent;
+}
+
+   
+
+.languge-selector {
+    gap: 15px;
+    border: 0.5px solid white;
+    padding-inline: 15px;
+    padding-block: 8px;
+    border-radius: 7px;
+}
+
+.languge-selector:hover {
+    border: solid white;
+}
+
+
+
+#language {
+    /* background-color: black; */
+    color: white;
+    border: none;
+}
+
+
+/* big header section */
+
+.big-header-section {
+    /* background-color: black; */
+    margin-top: 240px;
+    padding: 40px;
+}
+
+.title {
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.form-container {
+    text-align: center;
+    gap: 10px;
+}
+
+input[type="email"] {
+    background-color: lightgray;
+    opacity: 0.6;
+    /* opacity: 0.5; */
+}
+
+
+input[type="email"], input[type="submit"] {
+    display: block;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+input[type="email"], input[type="submit"] {
+    width: 520px;
+    height: 70px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    /* display: inline; */
+    background-color:  #e50914;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+     background-color: #c11119;
+}
+
+
+.header {
+    background-image: url("netflix\ logo.jpg");
+    border-bottom: 10px solid gray;
+}
+
+/* feature section */
+
+.feature-section {
+    margin-block: 75px;
+    border-bottom: 10px solid grey;
+}
+
+.fs-container1 {
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 50px;
+   
+}
+
+.fs-container2 {
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+
+.left-side {
+    width: 565px;
+    margin: 15px;
+    padding: 50px;
+    gap: 15px;
+}
+
+.right-side {
+    padding: 50px;
+}
+
+/* Faq section */
+
+.Faq-section {
+    border-bottom: 10px solid grey;
+}
+
+.Faq-section-container {
+    flex-direction: column;
+    padding-block: 30px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.faq-title {
+    padding: 20px;
+}
+
+.faq-title h2 {
+    font-size: 65px;
+}
+
+.Questions {
+    padding-top: 20px;
+}
+
+.que {
+    width: 1086px;
+    background-color: #2d2d2d;
+    margin: 10px;
+    padding: 30px 40px 30px 20px;
+    justify-content: space-between;
+    transition: 1.5 ease-in-out;
+}
+
+.que:hover {
+    border: 1px solid white;
+}
+
+.sign-up {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+.footer {
+    margin-block: 25px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    /* text-align: start; */
+}
+   
+
+
+.footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    height: 200px;
+    margin-block: 40px;
+    /* align-items: start; */
+ 
+}
+
+a {
+    width: 380px;
+    color: white;
+    text-decoration: underline;
+}
+
+.div {
+    margin-block: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
